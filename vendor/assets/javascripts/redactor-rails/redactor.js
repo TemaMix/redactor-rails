@@ -1166,6 +1166,7 @@ var RLANG = {
 		syncCode: function()
 		{
 			this.$el.val(this.$editor.html());
+      this.$el.trigger('onchange');
 		},
 
 		// API functions
